@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Data Engineer Challenge</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/styles.css') }}">
+</head>
+
+
+<body>    
+    <h1>Problem definition</h1>
+    <h2>We have a data set with booking information, and we’d like you to help us better understand
+        our business.</h2>
+    <h2>You can download the data set here:</h2>
+    <a href="url">https://d3ony5rmo3oa45.cloudfront.net/careers/data_take_home_bookings.zip</a>
+    <h2>This is what we want to know about the data:</h2>
+    <h2>1. What are the most popular guest origin countries?</h2>
+    <h3>{{ answer1 }}</h3>
+    <h3>{{ answer2 }}</h3>
+    <img src="../static/images/image_customer_type.png" width="900" height="500">
+    <h2>2. What is the room price per night?</h2>
+    <h3>{{ answer3 }}</h3>
+    <img src="../static/images/image_adults.png" width="900" height="500">
+    <img src="../static/images/image_children.png" width="900" height="500">
+    <img src="../static/images/image_board.png" width="900" height="500">
+    <img src="../static/images/image_parking_lot.png" width="900" height="500">
+    <img src="../static/images/image_reserved_room_type.png" width="900" height="500">
+    <img src="../static/images/image_acquisition_channel.png" width="900" height="500">
+    <h2>3. How does the previous price vary throughout the year?</h2>
+    <img src="../static/images/image_time.png" width="900" height="500">
+    <h2>4. What is the distribution of guests per month?</h2>
+    <img src="../static/images/image_guests.png" width="900" height="500">
+    <h2>5. For how long do guests book their stays?</h2>
+    <h3>{{ answer4 }}</h3>
+    <h3>{{ answer5 }}</h3>
+    <h3>{{ answer6 }}</h3>
+</body>
+</html>
