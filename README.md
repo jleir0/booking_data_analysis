@@ -9,8 +9,15 @@ This is what we want to know about the data:
 4. What is the distribution of guests per month? 
 5. For how long do guests book their stays? 
 
-The solution provide different dimensions, when necessary, to help the business better understand the data. 
-Cancellations and accommodation types are important business concepts.
-
-Run the solution in docker wouldn´t show the answer for questions 3 and 4. 
-Open data-engineer-challenge.ipyng file on jupyter to see the graphics that answer the 5 questions.
+Three options to see the solution
+1. Building and running the python script in docker folder by following the steps below but graphics for questions 3 & 4 wouldn´t be shown:
+- docker build -t python-imdb .
+- docker run python-imdb  
+2. Open data-engineer-challenge.ipyng file on jupyter to see the graphics that answer the 5 questions.
+3. Running the server in webserver folder by following the steps below:
+- py -m venv venv
+- . venv/scripts/activate
+- docker build -t python-fastapi .
+- cd app
+- py main.py
+The resoult of this is in the pdf included in the webserver folder.
