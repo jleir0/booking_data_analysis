@@ -15,9 +15,7 @@ Three options to see the solution
 - docker run python-imdb  
 2. Open data-engineer-challenge.ipyng file on jupyter to see the graphics that answer the 5 questions.
 3. Running the server in webserver folder by following the steps below:
-- py -m venv venv
-- . venv/scripts/activate
-- docker build -t python-fastapi .
-- cd app
-- py main.py
+- docker build -t uwsgi .  
+- docker run -d -p 8080:8000 --restart unless-stopped -v "$(pwd)/app:/app" uwsgi
+- go to http://localhost:8080/
 The resoult of this is in the pdf included in the webserver folder.
